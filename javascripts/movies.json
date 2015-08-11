@@ -1,0 +1,25 @@
+{
+  "movie": [
+    {
+      "movieName": "Lion King",
+      "actors": ["James Earl Jones", "Jeremy Irons", "Rowen Atkinson"],
+      "year": "1994",
+      "rating": 9,
+      "viewed": true
+    },
+    {
+      "movieName": "Aliddin",
+      "actors": ["Robin Williams", "Scott Weinger", "Gilbert Gottfried"],
+      "year": "1992",
+      "rating": 9,
+      "viewed": true
+    },
+    {
+      "movieName": "The Little Mermaid",
+      "actors": ["Jodi Benson", "Pat Carroll", "Samuel E. Wright"],
+      "year": "1989",
+      "rating": 9,
+      "viewed": true
+    }
+  ]
+}
