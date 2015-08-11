@@ -18,6 +18,7 @@ requirejs.config({
 requirejs(["jquery", "lodash", "firebase", "hbs", "bootstrap"], function($, _, _firebase, Handlebars, bootstrap) {
 
   var myFirebaseRef = new Firebase("https://movie-database.firebaseio.com/");
-  myFirebaseRef.child("songs").on("value", function(snapshot) {
-
+  myFirebaseRef.child("movie").on("value", function(snapshot) {
+  console.log(snapshot.val());
+});
 });
