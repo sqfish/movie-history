@@ -27,6 +27,7 @@ requirejs(["jquery", "lodash", "firebase", "hbs", "bootstrap", "searchMovieData"
     var watched;
     $('.btn').click(function(){
       watched = $(this).val();
+      watched = (watched === "true");
       console.log(watched);
     });
 
