@@ -26,7 +26,7 @@ requirejs(["jquery", "lodash", "firebase", "hbs", "bootstrap", "searchMovieData"
 
     var watched;
     $('.btn').click(function(){
-      watched = Boolean($(this).val());
+      watched = $(this).val();
       console.log(watched);
     });
 
@@ -37,7 +37,7 @@ requirejs(["jquery", "lodash", "firebase", "hbs", "bootstrap", "searchMovieData"
       searchMovie.queryMovies(movieName, function(movies) {
         var movieObj = movies;
         movieObj.rating = rating;
-        movieObj.watched = watched;
+        movieObj.viewed = watched;
         console.log(movieObj);
         console.log("data", movies);
         $.ajax({
