@@ -5,8 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/addMovies.css">
   <link rel="stylesheet" type="text/css" href="styles/main.css">
-  <title>Nashville Software School</title>
+  <title>Movie History</title>
 </head>
 
 <body>
@@ -24,37 +25,51 @@
 
   <div class="row">
     <div class="col-md-10">
-      <h4>Add a movie:</h4>
+      <label>Add a movie:</label>
       <div class="input-group input-group-lg">
         <span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-film" aria-hidden="true"></span></span>
         <input type="text" class="form-control movieName" placeholder=" Star Wars Episode IV: A New Hope" aria-describedby="sizing-addon1">
       </div>
-      <h4>Release date:</h4>
+      <br>
+      <label>Release date:</label>
       <div class="input-group input-group-lg">
         <span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span></span>
-        <input type="text" class="form-control artistName" placeholder="1977" aria-describedby="sizing-addon1">
+        <input type="text" class="form-control releaseDate" placeholder="1977" aria-describedby="sizing-addon1">
       </div>
-      <h4>Actors:</h4>
+      <br>
+      <label>Actors:</label>
       <div class="input-group input-group-lg">
         <span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-film" aria-hidden="true"></span></span>
-        <input type="text" class="form-control albumName" placeholder="Mark Hamill, James Earl Jones, Harrison Ford" aria-describedby="sizing-addon1">
+        <input type="text" class="form-control actors" placeholder="Mark Hamill, James Earl Jones, Harrison Ford" aria-describedby="sizing-addon1">
       </div>
-      <h4>:</h4>
-      <div class="input-group input-group-lg">
-        <span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span></span>
-        <input type="text" class="form-control albumYear" placeholder="" aria-describedby="sizing-addon1">
+      <br> 
+      <div>
+        <select id="rating">
+          <option disabled selected>Rating</option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
       </div>
-
-      <div class="btn-group" role="group" aria-label="...">
-        <button type="button" class="btn btn-default">Watched</button>
-        <button type="button" class="btn btn-default">To Watch</button>
+      <div class="btn-group watched" role="group" aria-label="...">
+        <button type="button" class="btn btn-default" value="watch">Watched</button>
+        <button type="button" class="btn btn-default" value="toWatch">To Watch</button>
       </div>
+      <button type="submit" id="submitMovie">Add Your Movie!</button>
 
       <button type="submit" id="submitSong">Add Your Movie!</button>
-    </div>  
-    
+    </div>
   </div>
 </div>
 </body>
   <script data-main="javascripts/main" src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/addMovies.js"></script>
 </html>

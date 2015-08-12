@@ -20,5 +20,6 @@ requirejs(["jquery", "lodash", "firebase", "hbs", "bootstrap"], function($, _, _
   var myFirebaseRef = new Firebase("https://movie-database.firebaseio.com/");
   myFirebaseRef.child("movie").on("value", function(snapshot) {
   console.log(snapshot.val());
-});
+
+  });
 });
