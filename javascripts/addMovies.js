@@ -39,6 +39,7 @@ requirejs(["jquery", "lodash", "firebase", "hbs", "bootstrap", "searchMovieData"
         var movieObj = movies;
         movieObj.rating = rating;
         movieObj.viewed = watched;
+        movieObj.poster = "http://img.omdbapi.com/?i=" + movieObj.imdbID + "&apikey=458e40ee";
         console.log(movieObj);
         console.log("data", movies);
         $.ajax({
