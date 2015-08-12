@@ -21,18 +21,20 @@ requirejs(["jquery", "lodash", "firebase", "hbs", "bootstrap", "dom-access"], fu
   myFirebaseRef.child("movie").on("value", function(snapshot) {
     var movies = snapshot.val();
     var storedMovieData = [];
-
-    
     for (var obj in movies) {
       storedMovieData.push(movies[obj]);
     }
 
-    var watchedMovieData = _.filter(storedMovieData, { 'viewed': true });
-    displayMovieData(watchedMovieData);
+    var toWatchMovieData = _.filter(storedMovieData, { 'viewed': false });
+
+
+
+
+    displayMovieData(toWatchMovieData);
   });
 
   function displayMovieData (movieArray) {
-    require(['hbs!../templates/movie-watched'], function(movieTemplate) {
+    require(['hbs!../templates/movie-to-watch'], function(movieTemplate) {
       outputContainer.html("");
       $(outputContainer).append(movieTemplate(movieArray));
     });
