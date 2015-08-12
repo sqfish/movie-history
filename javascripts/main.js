@@ -15,11 +15,7 @@ requirejs.config({
   }
 });
 
-requirejs(["jquery", "lodash", "firebase", "hbs", "bootstrap"], function($, _, _firebase, Handlebars, bootstrap) {
+requirejs(["jquery", "lodash", "firebase", "hbs", "bootstrap", "addMovies", "searchMovieData"], function($, _, _firebase, Handlebars, bootstrap, addMovies, searchMovie) {
 
-  var myFirebaseRef = new Firebase("https://movie-database.firebaseio.com/");
-  myFirebaseRef.child("movie").on("value", function(snapshot) {
-  console.log(snapshot.val());
-
-  });
+ 
 });
