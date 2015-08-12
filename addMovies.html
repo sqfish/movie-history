@@ -30,18 +30,6 @@
         <span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-film" aria-hidden="true"></span></span>
         <input type="text" class="form-control movieName" placeholder=" Star Wars Episode IV: A New Hope" aria-describedby="sizing-addon1">
       </div>
-      <br>
-      <label>Release date:</label>
-      <div class="input-group input-group-lg">
-        <span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span></span>
-        <input type="text" class="form-control releaseDate" placeholder="1977" aria-describedby="sizing-addon1">
-      </div>
-      <br>
-      <label>Actors:</label>
-      <div class="input-group input-group-lg">
-        <span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-film" aria-hidden="true"></span></span>
-        <input type="text" class="form-control actors" placeholder="Mark Hamill, James Earl Jones, Harrison Ford" aria-describedby="sizing-addon1">
-      </div>
       <br> 
       <div>
         <select id="rating">
@@ -60,16 +48,13 @@
         </select>
       </div>
       <div class="btn-group watched" role="group" aria-label="...">
-        <button type="button" class="btn btn-default" value="watch">Watched</button>
-        <button type="button" class="btn btn-default" value="toWatch">To Watch</button>
+        <button type="button" class="btn btn-default" value=true>Watched</button>
+        <button type="button" class="btn btn-default" value=false>To Watch</button>
       </div>
       <button type="submit" id="submitMovie">Add Your Movie!</button>
-
-      <button type="submit" id="submitSong">Add Your Movie!</button>
     </div>
   </div>
 </div>
+  <script data-main="javascripts/main" src="bower_components/requirejs/require.js"></script>
 </body>
-  <script data-main="javascripts/main" src="bower_components/jquery/dist/jquery.min.js"></script>
-  <script type="text/javascript" src="javascripts/addMovies.js"></script>
 </html>
