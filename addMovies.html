@@ -7,7 +7,7 @@
   <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="styles/addMovies.css">
   <link rel="stylesheet" type="text/css" href="styles/main.css">
-  <title>Nashville Software School</title>
+  <title>Movie History</title>
 </head>
 
 <body>
@@ -17,7 +17,7 @@
         <ul class="nav nav-pills navbar-fixed-top navbar-inverse">
           <li><span class="glyphicon glyphicon-film" aria-hidden="true"></span></li>
           <li role="presentation"><a href="index.html">Watched</a></li>
-          <li role="presentation"><a href="#">To Watch</a></li>
+          <li role="presentation"><a href="toWatch.html">To Watch</a></li>
           <li role="presentation" class="active"><a href="addMovies.html">Add Movie</a></li>
         </ul>
       </nav>
@@ -42,11 +42,7 @@
         <span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-film" aria-hidden="true"></span></span>
         <input type="text" class="form-control actors" placeholder="Mark Hamill, James Earl Jones, Harrison Ford" aria-describedby="sizing-addon1">
       </div>
-      <br>
-      <label>Poop:</label>
-      <div class="input-group input-group-lg">
-        <span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span></span>
-        <input type="text" class="form-control albumYear" placeholder="corney" aria-describedby="sizing-addon1">
+      <br> 
       <div>
         <select id="rating">
           <option disabled selected>Rating</option>
@@ -63,16 +59,14 @@
           <option value="10">10</option>
         </select>
       </div>
-
-      <div class="btn-group" role="group" aria-label="...">
-        <button type="button" class="btn btn-default watch">Watched</button>
-        <button type="button" class="btn btn-default watch">To Watch</button>
+      <div class="btn-group watched" role="group" aria-label="...">
+        <button type="button" class="btn btn-default" value="watch">Watched</button>
+        <button type="button" class="btn btn-default" value="toWatch">To Watch</button>
       </div>
-
-      <button type="submit" id="submitSong">Add Your Movie!</button>
-    </div>  
+      <button type="submit" id="submitMovie">Add Your Movie!</button>
   </div>
 </div>
 </body>
   <script data-main="javascripts/main" src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/addMovies.js"></script>
 </html>
