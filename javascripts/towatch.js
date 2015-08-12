@@ -39,6 +39,8 @@ requirejs(["jquery", "lodash", "firebase", "hbs", "bootstrap", "dom-access"], fu
       $(outputContainer).append(movieTemplate(movieArray));
     });
   }
-
+  $(document).on("click", ".removeButton", function () {
+    $(this).parent().parent().parent().remove();
+  });
 
 });

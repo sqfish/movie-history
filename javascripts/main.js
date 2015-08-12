@@ -25,7 +25,6 @@ requirejs(["jquery", "lodash", "firebase", "hbs", "bootstrap", "dom-access"], fu
     for (var obj in movies) {
       storedMovieData.push(movies[obj]);
     }
-
     var watchedMovieData = _.filter(storedMovieData, { 'viewed': true });
     displayMovieData(watchedMovieData);
   });
@@ -33,7 +32,11 @@ requirejs(["jquery", "lodash", "firebase", "hbs", "bootstrap", "dom-access"], fu
   function displayMovieData (movieArray) {
     require(['hbs!../templates/movie-watched'], function(movieTemplate) {
       outputContainer.html("");
-      $(outputContainer).append(movieTemplate(movieArray));
+      $(outputContainer).prepend(movieTemplate(movieArray));
     });
   }
+
+  $(document).on("click", ".removeButton", function () {
+      $(this).parent().parent().parent().remove();
+  });
 });
