@@ -3,6 +3,7 @@ body {
   background-image: url("../images/filmWallpaper.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  color: white;
 }
 
 .toWatchTemplate {
@@ -11,6 +12,7 @@ body {
   border-radius: 10px;
   box-shadow: 13px 13px 26px 6px rgba(0,0,0,0.71);
   margin-bottom: 5%;
+  color: white;
 }
 
 .watchedTemplate {
@@ -19,4 +21,9 @@ body {
   border-radius: 10px;
   box-shadow: 13px 13px 26px 6px rgba(0,0,0,0.71);
   margin-bottom: 5%;
+  color: white;
+}
+
+#submitMovie {
+  color: black;
 }
