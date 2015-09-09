@@ -10,6 +10,7 @@ This webapp allows users to search for movies using the OMDB api.  Users can the
 4. Firebase
 5. jQuery
 6. Bootstrap
+7. External OMDB api
 
 ###Requirements:
 1. [Nodejs](https://nodejs.org/en/)
