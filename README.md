@@ -20,3 +20,10 @@ This webapp allows users to search for movies using the OMDB api.  Users can the
 1. ```git clone https://github.com/ddbunc2/movie-history && cd movie-history```
 2. ```npm install``` May take a few minutes to download all dependencies, also runs bower install.
 3. ```npm start``` This fires up the web server 
+
+### Contributers
+* Taylor Miley [@taylormiley](https://github.com/taylormiley)
+* Sally Fisher [@sqfish](https://github.com/sqfish)
+* Deric Bunch [@ddbunc2](https://github.com/ddbunc2)
+
+Created as part of a project for Cohort 10 at [@nashville-software-school](https://github.com/nashville-software-school).
